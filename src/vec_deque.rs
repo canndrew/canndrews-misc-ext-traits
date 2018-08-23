@@ -3,6 +3,8 @@ use std::cmp::Ordering;
 use std::mem;
 
 pub trait VecDequeExt<T> {
+    /// Sort the `VecDeque` using the insertion sort algorithm. The sorting algorithm can be
+    /// quicker than the default algorithm on data which nearly sorted.
     fn insertion_sort_by<C>(&mut self, cmp: C)
     where
         C: FnMut(&T, &T) -> Ordering;

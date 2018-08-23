@@ -2,6 +2,7 @@ use bytes::BytesMut;
 use rand::RngCore;
 
 pub trait BytesMutExt {
+    /// Generate a random `BytesMut` of the given size.
     fn random(size: usize) -> BytesMut;
 }
 

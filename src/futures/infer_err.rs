@@ -1,6 +1,7 @@
 use std::marker::PhantomData;
 use futures::{Future, Stream, Async};
 
+/// Wraps a `Future` or `Stream` with error type `!` and yields an inferred error type.
 pub struct InferErr<F, E> {
     future: F,
     _ph: PhantomData<E>,
