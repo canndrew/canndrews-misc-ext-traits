@@ -2,7 +2,7 @@ cargo-features = ["edition"]
 
 [package]
 name = "canndrews-misc-ext-traits"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Andrew Cann <shum@canndrew.org>"]
 edition = "2018"
 
