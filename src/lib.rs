@@ -3,8 +3,12 @@
 
 mod vec_deque;
 mod result;
+mod arc;
+mod vec;
 pub use self::vec_deque::VecDequeExt;
 pub use self::result::ResultNeverErrExt;
+pub use self::arc::ArcExt;
+pub use self::vec::VecBytesExt;
 
 #[cfg(feature = "futures")]
 pub mod futures;
