@@ -6,10 +6,12 @@ mod result;
 mod arc;
 mod vec;
 mod net;
+mod cursor;
 pub use self::vec_deque::VecDequeExt;
 pub use self::result::ResultNeverErrExt;
 pub use self::arc::ArcExt;
 pub use self::vec::VecBytesExt;
+pub use self::cursor::CursorExt;
 
 #[cfg(feature = "futures")]
 pub mod futures;
